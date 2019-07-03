@@ -1,10 +1,9 @@
-"use strict";
-///<reference path="FileA.ts" />
-var daTest;
+import * as fileATest from "./FileA";
+export var daTest;
 (function (daTest) {
     class FileB {
         translate() {
-            let test = new daTest.Bugger();
+            let test = new fileATest.daTest.Bugger();
             console.log();
         }
     }

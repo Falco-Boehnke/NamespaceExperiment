@@ -1,5 +1,4 @@
-"use strict";
-var daTest;
+export var daTest;
 (function (daTest) {
     class Bugger {
         constructor() {

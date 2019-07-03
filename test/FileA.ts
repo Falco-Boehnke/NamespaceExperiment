@@ -1,4 +1,4 @@
-namespace daTest
+export namespace daTest
 {
     export class Bugger
     {
