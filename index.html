@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <!-- https://github.com/electron-userland/electron-compile/issues/267 -->
+    <script>
+        require('./renderer.js');
+      </script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -11,8 +15,7 @@
     and Electron <span id="electron-version"></span>.
 
     <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-    <script src="./test/FileA.js"></script>
-    <script src="./test/FileB.js"></script>
+    
+
   </body>
 </html>

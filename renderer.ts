@@ -3,7 +3,7 @@
 // All of the Node.js APIs are available in this process.
 // ///<reference path="test/FileA.ts" />
 // ///<reference path="test/FileB.ts" />
-import * as fileATests from "./test/FileA";
+import {Bugger} from "./test/FileA";
 
-let tester = new fileATests.daTest.Bugger();
+let tester: Bugger = new Bugger();
 tester.thathappened();

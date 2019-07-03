@@ -8,13 +8,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fileATest = __importStar(require("./FileA"));
-var daTest;
-(function (daTest) {
-    class FileB {
-        translate() {
-            let test = new fileATest.daTest.Bugger();
+class FileB {
+    constructor() {
+        this.translate = () => {
+            let test = new fileATest.Bugger();
             console.log();
-        }
+        };
     }
-    daTest.FileB = FileB;
-})(daTest = exports.daTest || (exports.daTest = {}));
+}
+exports.FileB = FileB;
