@@ -5,8 +5,8 @@ namespace daTest
 
 
         public translate() {
-            let test = new Bugger();
-            console.log()
+            // let test = new Bugger();
+            // console.log()
         }
     }
 }

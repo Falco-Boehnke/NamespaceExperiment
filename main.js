@@ -10,7 +10,9 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
+        // https://electronjs.org/docs/api/browser-window
         webPreferences: {
+            nodeIntegration: true,
             preload: path.join(__dirname, 'preload.js')
         }
     });

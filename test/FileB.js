@@ -4,8 +4,8 @@ var daTest;
 (function (daTest) {
     class FileB {
         translate() {
-            let test = new daTest.Bugger();
-            console.log();
+            // let test = new Bugger();
+            // console.log()
         }
     }
     daTest.FileB = FileB;

@@ -4,6 +4,18 @@
 ///<reference path="test/FileA.ts" />
 ///<reference path="test/FileB.ts" />
 
+// Funktioniert als namespaces, nur verwendet man sie dann genauso wie module und dann
+// ist es sinnlos. NAmespaces selbst funktionieren nicht, weil die im Electroncontext nicht
+// auffindbar zu sein scheinen
+// Für export namespace
+ import * as daTest2 from "./test/FileA";
+ let tester = new daTest2.daTest.Bugger();
 
-let tester = new daTest.Bugger();
+// Für reinen namespace
+// let tester = new daTest.Bugger();
+
+
+
+
+
 tester.thathappened();
