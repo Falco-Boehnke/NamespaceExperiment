@@ -1,15 +1,5 @@
 "use strict";
-// namespace daTest
-// {
-//     export class Bugger
-//     {
-//         thatSo: string = "It be.";
-Object.defineProperty(exports, "__esModule", { value: true });
-//         public thathappened(){
-//             console.log(this.thatSo);
-//         }
-//     }
-// }
+// für reinen namespace
 var daTest;
 (function (daTest) {
     class Bugger {
@@ -21,4 +11,15 @@ var daTest;
         }
     }
     daTest.Bugger = Bugger;
-})(daTest = exports.daTest || (exports.daTest = {}));
+})(daTest || (daTest = {}));
+// // Für export namespace
+// export namespace daTest
+// {
+//     export class Bugger
+//     {
+//         thatSo: string = "It be.";
+//         public thathappened(){
+//             console.log(this.thatSo);
+//         }
+//     }
+// }
