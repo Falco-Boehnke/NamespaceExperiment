@@ -1,4 +1,6 @@
-export var daTest;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var daTest;
 (function (daTest) {
     class Bugger {
         constructor() {
@@ -9,4 +11,4 @@ export var daTest;
         }
     }
     daTest.Bugger = Bugger;
-})(daTest || (daTest = {}));
+})(daTest = exports.daTest || (exports.daTest = {}));
